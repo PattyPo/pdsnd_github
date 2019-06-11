@@ -22,6 +22,6 @@ In order to get the query running, the following files provided by Udacity have 
 The query itself runs within bikeshare.py
 
 ### **Credits**
-The project data has been provided by Udacity and the rental bike company [Motivateo] (https://www.motivateco.com).
+The project data has been provided by Udacity and the rental bike company [Motivateo](https://www.motivateco.com).
 
 _Great Thanks!_
