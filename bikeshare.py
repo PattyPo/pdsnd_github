@@ -87,17 +87,18 @@ def load_data(city, month, day):
     return df
 
 
-def raw_data(df):
+def new_input(df):
+    """Gets User input to see if user wants to check raw data. Will display 5 lines of raw data"""
     while True:
         try:
-            raw_data = str(input('Would you like to see some individual data first?Please type in either yes or no.'))
+            new_input = str(input('Would you like to see some individual data first?Please type in either yes or no.'))
         except ValueError:
             print('\n That is not a valid answer! Please type in the correct option as stated above.\n')
         else:
-            if raw_data not in ('yes', 'no'):
+            if new_input not in ('yes', 'no'):
                 print('It looks like you made a spelling mistake - please type in "yes" or "no"')
             else:
-                if raw_data == 'yes':
+                if new_input == 'yes':
                     print(df.head(5))
                 else:
                     break
@@ -205,7 +206,7 @@ def main():
         city, month, day = get_filters()
         df = load_data(city, month, day)
 
-        raw_data (df)
+        new_input (df)
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
