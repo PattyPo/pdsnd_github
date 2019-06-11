@@ -88,6 +88,7 @@ def load_data(city, month, day):
 
 
 def new_input(df):
+    """Gets User input to see if user wants to check raw data. Will display 5 lines of raw data"""
     while True:
         try:
             new_input = str(input('Would you like to see some individual data first?Please type in either yes or no.'))
